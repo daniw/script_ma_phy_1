@@ -16,3 +16,40 @@
 %----------------------------------------
 
 % coding:utf-8
+\section{Komplexe Zahlen}
+Die Gleichung $x^2 + 1 = 0$ hat in $\mathbb{R}$ keine Lösung. 
+\[ x^2 + 1 = 0 \Leftrightarrow x^2 = -1 \qquad ; \text{aber} x^2 \geq 0 \forall x \in \mathbb{R} \]
+Wir erweitern daher den Bereich der reellen Zahlen $\mathbb{R}$ durch Hinzugabe neuer Zahlen so zu einem Zahlenbereich $\mathbb{C}$, dass die Gleichung $x^2 = -1$ in $\mathbb{C}$ lösbar ist. $\mathbb{C}$ soll eine Zahl enthalten, deren Quadrat $-1$ ist. Diese Zahl heisst imaginäre Einheit und wird mit $j$ bezeichnet: 
+\[ \boxed{j^2 = -1} \qquad \text{Imaginäre Einheit} \]
+Es soll also gelten: $\mathbb{R} \cup \{j\} \in \mathbb{C}$. 
+Andererseits sollen die in $\mathbb{R}$ geltenden Körperaxiome auch in $\mathbb{C}$ gelten. 
+Daraus folgt: $(a + b j) \in \mathbb{C} \forall a, b \in \mathbb{R}$. 
+\subsubsection{Definition:}
+\begin{framed}\noindent
+Die Summe $a + b j~(a, b, \in \mathbb{R})$ heissen komplexe Zahlen. $a$ heisst Realteil, $b$ Imaginärteil. Die Produkte der From $b j~(b \in \mathbb{R})$ heissen imaginäre Zahlen. Die Menge aller komplexen Zahlen wird mit $\mathbb{C}$ bezeichnet. 
+\end{framed}
+In Zeichen: 
+\\$ \mathbb{C}:=\{a + b j \quad | \quad a, b \in \mathbb{R}\} $
+\\Sei $z = a + b j$ eine komplexe Zahl. Man nennt
+\\$a = $ Re $ z$ : Realteil von $z$. 
+\\$b = $ Im $ z$ : Imaginärteil von $z$. 
+\[ \boxed{\overline{z} := a - b j} \qquad%
+\text{heisst die zu $z = a + b j$ konjugiert komplexe Zahl. } \]
+
+\subsubsection{Beispiele:}
+Komplexe Zahlen: $3 + 5 j, -7 + \frac{3}{4} j, 6 - \pi j$\\
+Imaginäre Zahlen: $5 j, \frac{\pi}{2} j, -7 j$\\
+Sei $z = 3 + 5 j$, dann ist: $3 =$ Re $z, 5 =$ Im $z, \overline{z} = 3 - 5 j$. \\
+$\overline{\overline{z}} = 3 + 5 j = z$\\
+Für $a \in \mathbb{R}$ gilt: $a = a + 0 j$, also $a \in \mathbb{R}$. Somit: 
+\[ \boxed{\mathbb{R} \subset \mathbb{C}} \qquad \text{Die Menge der komplexen Zahlen enthält $\mathbb{R}$} \]
+Für $b \in \mathbb{R}$ gilt: $b j = 0 + b j$, also $b j \in \mathbb{C}$. \\
+Insbesondere ist $j \in \mathbb{C}$. 
+
+\subsection{Bereich der komplexen Zahlen als Körper}
+Gleichheit: 
+\[ \boxed{a_1 + b_1 j = a_2 + b_2 j \Leftrightarrow a_1 = a_2\text{ und }b_1 = b_2} \]
+Beweis: \\
+$a_1 + b_1 j = a_2 + b_2 j \Rightarrow a_1 - a_2 = (b_2 - b_1) j$\\
+Wäre $b_2 \neq b_1 \Rightarrow b_2 - b_1 \neq 0 \Rightarrow j = \frac{a_1 - a_2}{b_2 - b_1} \in \mathbb{R}$: unmöglich\\
+Somit ist $b_2 = b_1 \Rightarrow b_2 - b_1 = 0 \Rightarrow a_1 - a_2 = 0 \Rightarrow a_1 = a_2$
