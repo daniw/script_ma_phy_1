@@ -1,4 +1,4 @@
 script_stoc
 ===========
 
-Getechtes Skript der Vorlesung Mathematik und Physik
+GeTeXtetes Skript der Vorlesung Mathematik und Physik
