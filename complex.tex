@@ -86,3 +86,25 @@ Beispiele: \\
 \[ \frac{3 - 4 j}{1 + 2 j} = \frac{(3 - 4 j)(1 - 2 j)}{1 - (2 j)^2} = \frac{-5 -10}{5} = -1 -2 j \]
 \[ (3 + 2 j)^{-3} = \frac{1}{(3 + 2 j)^3}; \quad (3 + 2 j)^3 = 27 + 54 j - 36 - 8 j = -9 + 46 j \]
 \[ \frac{1}{(3 + 2 j)^3} = \frac{1}{-9 + 46 j} = \frac{-9 + 46 j}{81 + 2116} = -\frac{9}{2197} - \frac{46}{2197} j \]
+
+\subsubsection{Fazit}
+Wir haben festgestellt, dass die vier Grundoperationen nicht aus der Menge der komplexen Zahlen herausführen. Man kann leicht nachrechnen, dass die Axiome des reellen Zahlenkörpers auch von den komplexen Zahlen erfüllt werden. 
+\begin{framed}\noindent
+  Die komplexen Zahlen erfüllen sämtliche Körperaxiome. 
+\end{framed}
+Daraus folgt: \\
+Mit den komplexen Zahlen darf man formal so rechen wie mit den reellen Zahlen! 
+
+\section{Fundamentalsatz der Algebra}
+Der Körper der komplexen Zahlen enthält eine Zahl $j$, deren Quadrat $-1$ ist: $j^2 = -1$. Somit ist die Gleichung $x^2 + 1 = 0$ in $\mathbb{C}$ lösbar: $x_1 = j, \quad x_2 = -j$\\\\
+Allgemein gilt der
+\subsubsection{Fundamentalsatz der Algebra}
+\begin{framed}\noindent
+  Jede algebraische Gleichung n-uen Grades $a_n z^n + a_{n-1} z^{n-1} + \dots + a_1 z + a_0 = 0$ mit komplexen Koeffizienten $a_0, a_1, \dots, a_n$ hat mindestens eine Komplexe Lösung. 
+\end{framed}
+Beispiel: \\
+$x^2 + px + q = 0 \qquad \text{ mit }p, q \in \mathbb{R} \subset \mathbb{C}$\\
+$x_{1, 2} = \left\{ \begin{matrix}
+  \dfrac{-p \pm \sqrt{p^2 - 4 q}}{2} \qquad & \text{wenn } p^2 - 4 q \geq 0\\\\
+  \dfrac{-p \pm j \sqrt{4 q - p^2}}{2} \qquad & \text{wenn } p^2 - 4 q < 0
+\end{matrix} \right.$
