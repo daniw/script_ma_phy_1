@@ -27,7 +27,7 @@ Daraus folgt: $(a + b j) \in \mathbb{C} \forall a, b \in \mathbb{R}$.
 \subsubsection{Definition:}
 \begin{framed}\noindent
 Die Summe $a + b j~(a, b, \in \mathbb{R})$ heissen komplexe Zahlen. $a$ heisst Realteil, $b$ Imaginärteil. Die Produkte der From $b j~(b \in \mathbb{R})$ heissen imaginäre Zahlen. Die Menge aller komplexen Zahlen wird mit $\mathbb{C}$ bezeichnet. 
-\end{framed}
+\end{framed}\noindent
 In Zeichen: 
 \\$ \mathbb{C}:=\{a + b j \quad | \quad a, b \in \mathbb{R}\} $
 \\Sei $z = a + b j$ eine komplexe Zahl. Man nennt
@@ -91,7 +91,7 @@ Beispiele: \\
 Wir haben festgestellt, dass die vier Grundoperationen nicht aus der Menge der komplexen Zahlen herausführen. Man kann leicht nachrechnen, dass die Axiome des reellen Zahlenkörpers auch von den komplexen Zahlen erfüllt werden. 
 \begin{framed}\noindent
   Die komplexen Zahlen erfüllen sämtliche Körperaxiome. 
-\end{framed}
+\end{framed}\noindent
 Daraus folgt: \\
 Mit den komplexen Zahlen darf man formal so rechen wie mit den reellen Zahlen! 
 
@@ -101,10 +101,43 @@ Allgemein gilt der
 \subsubsection{Fundamentalsatz der Algebra}
 \begin{framed}\noindent
   Jede algebraische Gleichung n-uen Grades $a_n z^n + a_{n-1} z^{n-1} + \dots + a_1 z + a_0 = 0$ mit komplexen Koeffizienten $a_0, a_1, \dots, a_n$ hat mindestens eine Komplexe Lösung. 
-\end{framed}
+\end{framed}\noindent
 Beispiel: \\
 $x^2 + px + q = 0 \qquad \text{ mit }p, q \in \mathbb{R} \subset \mathbb{C}$\\
 $x_{1, 2} = \left\{ \begin{matrix}
   \dfrac{-p \pm \sqrt{p^2 - 4 q}}{2} \qquad & \text{wenn } p^2 - 4 q \geq 0\\\\
   \dfrac{-p \pm j \sqrt{4 q - p^2}}{2} \qquad & \text{wenn } p^2 - 4 q < 0
 \end{matrix} \right.$
+
+\section{Konjugiert - komplexe Zahlen}
+Seien $z, z_1, z_2 \in \mathbb{C}$ mit $z = a + b j, \overline{z} = a - b j$, dann gelten folgende Rechenregeln: 
+\[ \boxed{\begin{array}{l}
+  z \cdot \overline{z} = a^2 + b^2 \geq 0 \qquad , \text{ also } z \cdot \overline{z} \in \mathbb{R}\\\\
+  z \cdot \overline{z} = 0 \Leftrightarrow z = 0 + 0 j = 0\\\\
+  z = \overline{z} \Leftrightarrow z \in \mathbb{R} (\text{ also } b = 0)\\\\
+  z = -\overline{z} \Leftrightarrow z \text{ ist imaginär } (a = 0)\\\\
+  \overline{z_1 \pm z_2} = \overline{z_1} \pm \overline{z_2} \qquad \overline{\left( \frac{z_1}{z_2} \right)} = \frac{\overline{z_1}}{\overline{z_2}}\\\\
+  \overline{z_1 \cdot z_2} = \overline{z_1} \cdot \overline{z_2} \qquad \overline{\overline{z}} = z
+\end{array}} \]
+Die Division kan jetzt kürzer formuliert werden: \\
+$\dfrac{z_1}{z_2} = \dfrac{z_1 \cdot \overline{z_2}}{z_2 \cdot \overline{z_2}} = \dfrac{z_1 \cdot \overline{z_2}}{{a_2}^2 + {b_2}^2}$\\\\
+$\dfrac{1}{z} = \dfrac{\overline{z}}{z \cdot \overline{z}} = \dfrac{a - b j}{a^2 + b^2} = \dfrac{a}{a^2 + b^2} - \dfrac{b}{a^2 + b^2} j$\\\\
+Falls $z\neq 0$ ( $a \neq 0$ oder $b \neq 0$ ) gilt also: 
+\[ \boxed{z^{-1} = \frac{a - b j}{a^2 + b^2}} \]
+\begin{framed}\noindent
+  Ist $z = a + b j$ eine Lösung der Gleichung $a_n z^n + a_{n-1} z^{n - 1} + \dots + a_1 z + a_0 = 0$ mit reelleen Koeffizienten $a_0, a_1, \dots, a_n$, so ost auch $\overline{z} = a - b j$ eine Lösung. 
+\end{framed}\noindent
+Eine algebraische Gleichung n-ten Grades mit reellen Koeffizienten hat also entweder keine oder paarweise konjugiert-komplexe Lösungen. \\\\
+Beweis: \\
+Sei $z \in L \Leftrightarrow a_n z^n + \dots + a_1 z + a_0 = 0$\\
+$a_n \overline{z}^n + a_{n-1} \overline{z}^{n-1} + \dots + a_1 \overline{z} + a_0 = $\\
+$\overline{a_n} \cdot \overline{z^n} + \overline{a_{n-1}} \cdot \overline{z^{n-1}} + \dots + \overline{a_1} \cdot \overline{z} + \overline a_0 = $\\
+$\overline{a_n \cdot z^n + a_{n-1} \cdot z^{n-1} + \dots + a_1 \cdot z + a_0} = \overline{0} = 0$\\\\
+Beispiel: \\
+$z^3 - 1 = 0$ \\
+Prüfe nach, dass neben $z_1 = 1$ auch $z_2 = -\frac{1}{2} + \frac{sqrt{3}}{2} j$ und $z_3 = \overline{z_2} = -\frac{1}{2} - \frac{\sqrt{3}}{2} j$ Lösungen sind. \\\\
+Bemerkungen: \\
+Sind die Koeffizienten der Gleichung $a_n z^n + a_{n-1} z^{n-1} + \dots + a_1 z + a_0 = 0$ nicht alle reell, so müssen komplexe Lösungen nicht mehr konjugiert-komplex auftreten. \\\\
+Beispiel: \\
+$z^3 - 4 z^2 + (6 + j) z + (-3 - j) = 0$\\
+Prüfe nach, dass die Zahlen $z_1 = 1, \quad z_2 = 1 + j, \quad z_3 = 2 - j$ Lösungen dieser Gleichung sind. 
